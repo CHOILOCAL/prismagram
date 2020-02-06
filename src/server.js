@@ -12,10 +12,3 @@ server.express.use(logger("dev"));
 server.start({ port: PORT }, () =>
   console.log(`✅ Server running on http://localhost:${PORT}`)
 );
-
-/** prisma는 db 해결용도, graphql을 변환해줌 
- * 
- * 
- * 
- * 
-*/
