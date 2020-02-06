@@ -9,6 +9,7 @@ git push test 3 2020-02-04 AM 09:49
 
 ## User Stories
 
+- [] Log in
 - [] Like / UnLike a photo
 - [] Comment on a photo
 - [] Search by user
@@ -18,7 +19,6 @@ git push test 3 2020-02-04 AM 09:49
 - [] See the full photo
 - [] Edit my profile
 - [] Create account
-- [] Log in
 - [] Upload a photo
 - [] Eedit the photo (Delete)
 - [] See the feed
