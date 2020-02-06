@@ -9,6 +9,9 @@ git push test 3 2020-02-04 AM 09:49
 
 ## User Stories
 
+- [O] Create account
+- [] Request Secret
+- [] Confirm Secret (login)
 - [] Log in
 - [] Like / UnLike a photo
 - [] Comment on a photo
@@ -18,7 +21,6 @@ git push test 3 2020-02-04 AM 09:49
 - [] Follow / Unfollow User
 - [] See the full photo
 - [] Edit my profile
-- [] Create account
 - [] Upload a photo
 - [] Eedit the photo (Delete)
 - [] See the feed
