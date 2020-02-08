@@ -15,17 +15,17 @@ const sendMail = email => {
   const options = {
     auth: {
       api_user: process.env.SENDGRID_USERNAME,
-      api_key: process.env.SENGRID_PASSWORD
+      api_key: process.env.SENDGRID_PASSWORD
     }
   };
   const client = nodemailer.createTransport(sgTransport(options));
   return client.sendMail(email);
 };
 
-export const sendSecretMail = (adress, secret) => {
+export const sendSecretMail = (adrress, secret) => {
   const email = {
     from: "nico@prismagram.com",
-    to: adress,
+    to: adrress,
     subject: "🔒Login Secret for Prismagram🔒",
     html: `Hello! Your login secret it ${secret}.<br/>Copy paste on the app/website to log in`
   };
