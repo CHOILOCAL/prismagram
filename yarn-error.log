@@ -1,11 +1,11 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/nodemailer-sendgrid-transport
+  C:\Program Files\nodejs\node.exe C:\Users\Hyungi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add missing-plugin-helper -D
 
 PATH: 
-  C:\windows\System32\WindowsPowerShell\v1.0\;C:\Python27\;C:\Python27\Scripts;C:\windows\Softcamp\SDK;C:\windows\Softcamp\SDS\x64;C:\windows\Softcamp\SDS;C:\app\choihyunji\product\11.2.0\dbhome_2\bin;C:\app\choihyunji\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files (x86)\Java\jdk1.8.0_221\bin;C:\Program Files (x86)\PuTTY\;C:\Program Files\Amazon\AWSCLI\bin\;C:\Users\it\AppData\Local\Programs\Python\Python37-32;C:\Users\it\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\TortoiseSVN\bi;D:\02. SSG\dev\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\FEM00380\AppData\Local\Microsoft\WindowsApps;;C:\Users\FEM00380\AppData\Local\Programs\Fiddler;C:\Program Files\Bandizip\;C:\Users\FEM00380\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\FEM00380\AppData\Roaming\npm;C:\Users\FEM00380\AppData\Local\Yarn\bin
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\PuTTY\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;D:\dev\apache-maven-3.6.2\bin;C:\Program Files\nodejs\;C:\Users\Hyungi\AppData\Local\Microsoft\WindowsApps;C:\apache-tomcat-8.5.40\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\work\pysou;C:\work\pysou\Scripts;C:\Program Files\Bandizip\;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;C:\Program Files\Docker Toolbox;C:\Users\Hyungi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hyungi\AppData\Roaming\npm
 
 Yarn version: 
-  1.21.1
+  1.19.1
 
 Node version: 
   12.14.1
@@ -14,13 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fnodemailer-sendgrid-transport: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66056:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140665:22)
+  Error: https://registry.yarnpkg.com/missing-plugin-helper: Not found
+      at Request.params.callback [as _callback] (C:\Users\Hyungi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66926:18)
+      at Request.self.callback (C:\Users\Hyungi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140564:22)
       at Request.emit (events.js:223:5)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141637:10)
+      at Request.<anonymous> (C:\Users\Hyungi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141536:10)
       at Request.emit (events.js:223:5)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141559:12)
+      at IncomingMessage.<anonymous> (C:\Users\Hyungi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141458:12)
       at Object.onceWrapper (events.js:312:28)
       at IncomingMessage.emit (events.js:228:7)
       at endReadableNT (_stream_readable.js:1185:12)
@@ -51,6 +51,8 @@ npm manifest:
       "nodemailer": "^6.4.2",
       "nodemailer-sendgrid-transport": "^0.2.0",
       "nodemon": "^2.0.2",
+      "passport": "^0.4.1",
+      "passport-jwt": "^4.0.0",
       "prisma": "^1.34.10",
       "prisma-client-lib": "^1.34.10"
     },
@@ -3846,7 +3848,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
     integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
   
-  jsonwebtoken@^8.1.0, jsonwebtoken@^8.3.0:
+  jsonwebtoken@^8.1.0, jsonwebtoken@^8.2.0, jsonwebtoken@^8.3.0:
     version "8.5.1"
     resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
     integrity sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
@@ -4730,6 +4732,27 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
     integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
   
+  passport-jwt@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/passport-jwt/-/passport-jwt-4.0.0.tgz#7f0be7ba942e28b9f5d22c2ebbb8ce96ef7cf065"
+    integrity sha512-BwC0n2GP/1hMVjR4QpnvqA61TxenUMlmfNjYNgK0ZAs0HK4SOQkHcSv4L328blNTLtHq7DbmvyNJiH+bn6C5Mg==
+    dependencies:
+      jsonwebtoken "^8.2.0"
+      passport-strategy "^1.0.0"
+  
+  passport-strategy@1.x.x, passport-strategy@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/passport-strategy/-/passport-strategy-1.0.0.tgz#b5539aa8fc225a3d1ad179476ddf236b440f52e4"
+    integrity sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ=
+  
+  passport@^0.4.1:
+    version "0.4.1"
+    resolved "https://registry.yarnpkg.com/passport/-/passport-0.4.1.tgz#941446a21cb92fc688d97a0861c38ce9f738f270"
+    integrity sha512-IxXgZZs8d7uFSt3eqNjM9NQ3g3uQCW5avD8mRNoXV99Yig50vjuaez6dQK2qC0kVWPRTujxY0dWgGfT09adjYg==
+    dependencies:
+      passport-strategy "1.x.x"
+      pause "0.0.1"
+  
   path-dirname@^1.0.0:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/path-dirname/-/path-dirname-1.0.2.tgz#cc33d24d525e099a5388c0336c6e32b9160609e0"
@@ -4783,6 +4806,11 @@ Lockfile:
     version "4.0.0"
     resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
     integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+  
+  pause@0.0.1:
+    version "0.0.1"
+    resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
+    integrity sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10=
   
   performance-now@^2.1.0:
     version "2.1.0"
