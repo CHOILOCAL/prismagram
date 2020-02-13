@@ -1,7 +1,3 @@
-import dotenv from "dotenv";
-import path from "path";
-dotenv.config({ path: path.resolve(__dirname, ".env") });
-
 import passport from "passport";
 import { Strategy, ExtractJwt } from "passport-jwt";
 import { prisma } from "../generated/prisma-client";
@@ -25,4 +21,16 @@ const verifyUser = async (payload, done) => {
     }
   };
 
+  // passport는 session과 cookies를 가져오고 만들어주고 모든 일을 함
+  export const authenticateJwt = (req, res, next) => 
+    passport.authenticate("jwt", { session: false }, (error, user) => {
+     if(user){
+        req.user = user;
+      }
+      next();
+    })(req, res, next);
+  // 리턴한것을 req, res, next로 넘겨주어야함
+  // 로그인이 되어있다면 graqhql에 사용자 정보 추가 -> 요청
+
 passport.use(new Strategy(JwtOptions, verifyUser));
+passport.initialize();
