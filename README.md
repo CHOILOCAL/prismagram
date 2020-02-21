@@ -17,14 +17,16 @@ git push test 7 2020-02-13 pm 12:35
 
 git push test 8 2020-02-17 pm 12:15
 
+git push test 9 2020-02-21 pm 12:27
+
 ## User Stories
 
 - [O] Create account
 - [O] Request Secret
 - [O] Confirm Secret (login)
-- [] Log in
-- [] Like / UnLike a photo
-- [] Comment on a photo
+- [O] Log in
+- [O] Like / UnLike a photo
+- [O] Comment on a photo
 - [] Search by user
 = [] Search by location
 - [] See user profile
