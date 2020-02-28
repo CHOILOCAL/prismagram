@@ -25,6 +25,8 @@ git push test 11 2020-02-26 am 08:55 q900ta
 
 git push test 12 2020-02-27 pm 12:50
 
+git push test 13 2020-02-28 pm 12:53
+
 ## User Stories
 
 - [O] Create account
@@ -33,8 +35,8 @@ git push test 12 2020-02-27 pm 12:50
 - [O] Log in
 - [O] Like / UnLike a photo
 - [O] Comment on a photo
-- [] Search by user
-= [] Search by location
+- [O] Search by user
+= [O] Search by location
 - [] See user profile
 - [] Follow / Unfollow User
 - [] See the full photo

@@ -58,9 +58,9 @@ typings/
 .env
 
 # next.js build output
-# .next
-# generated
-# build
-# node_modules
-# prisma.yml
+.next
+generated
+build
+node_modules
+prisma.yml
 node_modules
