@@ -29,6 +29,8 @@ git push test 13 2020-02-28 pm 12:53
 
 git push test 14 2020-03-01 pm 15:02
 
+git push test 15 2020-03-01 pm 15:50
+
 ## User Stories
 
 - [O] Create account
@@ -41,8 +43,9 @@ git push test 14 2020-03-01 pm 15:02
 - [O] Search by location
 - [O] Follow User
 - [O] Unfollow User
-- [] Edit my profile
-- [] See user profile
+- [O] Edit my profile
+- [O] See user profile
+- [] See my profile
 - [] See the full photo
 - [] Upload a photo
 - [] Eedit the photo (Delete)
