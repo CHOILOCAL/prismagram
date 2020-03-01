@@ -27,6 +27,8 @@ git push test 12 2020-02-27 pm 12:50
 
 git push test 13 2020-02-28 pm 12:53
 
+git push test 14 2020-03-01 pm 15:02
+
 ## User Stories
 
 - [O] Create account
@@ -36,11 +38,12 @@ git push test 13 2020-02-28 pm 12:53
 - [O] Like / UnLike a photo
 - [O] Comment on a photo
 - [O] Search by user
-= [O] Search by location
-- [] See user profile
-- [] Follow / Unfollow User
-- [] See the full photo
+- [O] Search by location
+- [O] Follow User
+- [O] Unfollow User
 - [] Edit my profile
+- [] See user profile
+- [] See the full photo
 - [] Upload a photo
 - [] Eedit the photo (Delete)
 - [] See the feed
