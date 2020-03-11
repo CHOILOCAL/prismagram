@@ -35,6 +35,8 @@ git push test 15 2020-03-01 pm 16:
 
 git push test 16 2020-03-09 pm 16:48
 
+git push
+
 ## User Stories
 
 - [O] Create account
