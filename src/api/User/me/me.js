@@ -4,6 +4,7 @@ import { USER_FRAGMENT } from "../../../fragments";
 export default {
   Query: {
     me: async (_, __, { request, isAuthenticated }) => {
+      console.log("user parent of fullname", _);
       isAuthenticated(request);
       const { user } = request;
       const userProfile = await prisma.user({ id: user.id });
@@ -15,9 +16,8 @@ export default {
     }
   },
   User: {
-    fullName: (_, _, {requst}) => {
-      console.log(request);
-      return "lalalal";
+    fullName: (parent) => {
+      return `${parent.firstName} ${parent.lastName}`;
     }
   }
 };
