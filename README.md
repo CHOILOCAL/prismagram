@@ -41,6 +41,8 @@ git push test 18 2020-03-11 pm 15:32
 
 git push test 19 2020-03-12 pm 15:43
 
+git push test 20 2020-03-12 pm 16:20
+
 ## User Stories
 
 - [O] Create account
@@ -60,3 +62,7 @@ git push test 19 2020-03-12 pm 15:43
 - [] Upload a photo
 - [] Eedit the photo (Delete)
 - [] See the feed
+- [] See rooms
+- [] See room
+- [] Send private Message
+- [] Receive Message (Realtime)
