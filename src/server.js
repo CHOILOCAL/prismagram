@@ -8,7 +8,7 @@ import { authenticateJwt } from "./passport";
 import { isAuthenticated } from "./middlewares";
 
 
-sendSecretMail("giants1217@naver.com", "123");
+// sendSecretMail("giants1217@naver.com", "123");
 
 const PORT = process.env.PORT || 4000;
 
