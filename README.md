@@ -49,6 +49,7 @@ git push #3.20 editPost deletePost Resolver
 
 git push #3.21 deletePost Resolver part Two
 
+git push #3.22 seedFeed 
 
 ## User Stories
 
@@ -68,7 +69,7 @@ git push #3.21 deletePost Resolver part Two
 - [O] See the full photo
 - [O] Upload a photo
 - [O] Edit the photo (Delete)
-- [] See the feed
+- [O] See the feed
 - [] See rooms
 - [] See room
 - [] Send private Message
