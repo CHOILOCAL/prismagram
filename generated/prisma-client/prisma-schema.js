@@ -39,7 +39,7 @@ type Comment {
   id: ID!
   text: String!
   user: User!
-  post: Post!
+  post: Post
 }
 
 type CommentConnection {
@@ -52,7 +52,7 @@ input CommentCreateInput {
   id: ID
   text: String!
   user: UserCreateOneWithoutCommentsInput!
-  post: PostCreateOneWithoutCommentsInput!
+  post: PostCreateOneWithoutCommentsInput
 }
 
 input CommentCreateManyWithoutPostInput {
@@ -74,7 +74,7 @@ input CommentCreateWithoutPostInput {
 input CommentCreateWithoutUserInput {
   id: ID
   text: String!
-  post: PostCreateOneWithoutCommentsInput!
+  post: PostCreateOneWithoutCommentsInput
 }
 
 type CommentEdge {
@@ -149,7 +149,7 @@ input CommentSubscriptionWhereInput {
 input CommentUpdateInput {
   text: String
   user: UserUpdateOneRequiredWithoutCommentsInput
-  post: PostUpdateOneRequiredWithoutCommentsInput
+  post: PostUpdateOneWithoutCommentsInput
 }
 
 input CommentUpdateManyDataInput {
@@ -196,7 +196,7 @@ input CommentUpdateWithoutPostDataInput {
 
 input CommentUpdateWithoutUserDataInput {
   text: String
-  post: PostUpdateOneRequiredWithoutCommentsInput
+  post: PostUpdateOneWithoutCommentsInput
 }
 
 input CommentUpdateWithWhereUniqueWithoutPostInput {
@@ -264,7 +264,7 @@ input CommentWhereUniqueInput {
 type File {
   id: ID!
   url: String!
-  post: Post!
+  post: Post
 }
 
 type FileConnection {
@@ -276,7 +276,7 @@ type FileConnection {
 input FileCreateInput {
   id: ID
   url: String!
-  post: PostCreateOneWithoutFilesInput!
+  post: PostCreateOneWithoutFilesInput
 }
 
 input FileCreateManyWithoutPostInput {
@@ -360,7 +360,7 @@ input FileSubscriptionWhereInput {
 
 input FileUpdateInput {
   url: String
-  post: PostUpdateOneRequiredWithoutFilesInput
+  post: PostUpdateOneWithoutFilesInput
 }
 
 input FileUpdateManyDataInput {
@@ -445,7 +445,7 @@ input FileWhereUniqueInput {
 type Like {
   id: ID!
   user: User!
-  post: Post!
+  post: Post
 }
 
 type LikeConnection {
@@ -457,7 +457,7 @@ type LikeConnection {
 input LikeCreateInput {
   id: ID
   user: UserCreateOneWithoutLikesInput!
-  post: PostCreateOneWithoutLikesInput!
+  post: PostCreateOneWithoutLikesInput
 }
 
 input LikeCreateManyWithoutPostInput {
@@ -477,7 +477,7 @@ input LikeCreateWithoutPostInput {
 
 input LikeCreateWithoutUserInput {
   id: ID
-  post: PostCreateOneWithoutLikesInput!
+  post: PostCreateOneWithoutLikesInput
 }
 
 type LikeEdge {
@@ -534,7 +534,7 @@ input LikeSubscriptionWhereInput {
 
 input LikeUpdateInput {
   user: UserUpdateOneRequiredWithoutLikesInput
-  post: PostUpdateOneRequiredWithoutLikesInput
+  post: PostUpdateOneWithoutLikesInput
 }
 
 input LikeUpdateManyWithoutPostInput {
@@ -564,7 +564,7 @@ input LikeUpdateWithoutPostDataInput {
 }
 
 input LikeUpdateWithoutUserDataInput {
-  post: PostUpdateOneRequiredWithoutLikesInput
+  post: PostUpdateOneWithoutLikesInput
 }
 
 input LikeUpdateWithWhereUniqueWithoutPostInput {
@@ -1074,24 +1074,30 @@ input PostUpdateManyWithWhereNestedInput {
   data: PostUpdateManyDataInput!
 }
 
-input PostUpdateOneRequiredWithoutCommentsInput {
+input PostUpdateOneWithoutCommentsInput {
   create: PostCreateWithoutCommentsInput
   update: PostUpdateWithoutCommentsDataInput
   upsert: PostUpsertWithoutCommentsInput
+  delete: Boolean
+  disconnect: Boolean
   connect: PostWhereUniqueInput
 }
 
-input PostUpdateOneRequiredWithoutFilesInput {
+input PostUpdateOneWithoutFilesInput {
   create: PostCreateWithoutFilesInput
   update: PostUpdateWithoutFilesDataInput
   upsert: PostUpsertWithoutFilesInput
+  delete: Boolean
+  disconnect: Boolean
   connect: PostWhereUniqueInput
 }
 
-input PostUpdateOneRequiredWithoutLikesInput {
+input PostUpdateOneWithoutLikesInput {
   create: PostCreateWithoutLikesInput
   update: PostUpdateWithoutLikesDataInput
   upsert: PostUpsertWithoutLikesInput
+  delete: Boolean
+  disconnect: Boolean
   connect: PostWhereUniqueInput
 }
 
@@ -1430,7 +1436,7 @@ type User {
   likes(where: LikeWhereInput, orderBy: LikeOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Like!]
   comments(where: CommentWhereInput, orderBy: CommentOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Comment!]
   rooms(where: RoomWhereInput, orderBy: RoomOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Room!]
-  loginSecret: String!
+  loginSecret: String
 }
 
 type UserConnection {
@@ -1452,7 +1458,7 @@ input UserCreateInput {
   likes: LikeCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateManyWithoutFollowersInput {
@@ -1502,7 +1508,7 @@ input UserCreateWithoutCommentsInput {
   posts: PostCreateManyWithoutUserInput
   likes: LikeCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateWithoutFollowersInput {
@@ -1517,7 +1523,7 @@ input UserCreateWithoutFollowersInput {
   likes: LikeCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateWithoutFollowingInput {
@@ -1532,7 +1538,7 @@ input UserCreateWithoutFollowingInput {
   likes: LikeCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateWithoutLikesInput {
@@ -1547,7 +1553,7 @@ input UserCreateWithoutLikesInput {
   posts: PostCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateWithoutPostsInput {
@@ -1562,7 +1568,7 @@ input UserCreateWithoutPostsInput {
   likes: LikeCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
   rooms: RoomCreateManyWithoutParticipantsInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserCreateWithoutRoomsInput {
@@ -1577,7 +1583,7 @@ input UserCreateWithoutRoomsInput {
   posts: PostCreateManyWithoutUserInput
   likes: LikeCreateManyWithoutUserInput
   comments: CommentCreateManyWithoutUserInput
-  loginSecret: String!
+  loginSecret: String
 }
 
 type UserEdge {
@@ -1609,7 +1615,7 @@ type UserPreviousValues {
   firstName: String
   lastName: String
   bio: String
-  loginSecret: String!
+  loginSecret: String
 }
 
 input UserScalarWhereInput {

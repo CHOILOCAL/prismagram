@@ -45,6 +45,11 @@ git push test 20 2020-03-12 pm 16:20
 
 git push test 21 2020-03-12 pm 17:16
 
+git push #3.20 editPost deletePost Resolver
+
+git push #3.21 deletePost Resolver part Two
+
+
 ## User Stories
 
 - [O] Create account
@@ -61,8 +66,8 @@ git push test 21 2020-03-12 pm 17:16
 - [O] See user profile
 - [O] See my profile
 - [O] See the full photo
-- [] Upload a photo
-- [] Eedit the photo (Delete)
+- [O] Upload a photo
+- [O] Edit the photo (Delete)
 - [] See the feed
 - [] See rooms
 - [] See room
