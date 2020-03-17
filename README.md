@@ -57,6 +57,8 @@ git push #3.24 sendMessage part Two am 11:10
 
 git push #3.27 newMessage Subscription part One
 
+git push #3.30 complete
+
 ## User Stories
 
 - [O] Create account
@@ -79,4 +81,4 @@ git push #3.27 newMessage Subscription part One
 - [O] Send private Message
 - [O] See room
 - [O] See rooms
-- [] Receive Message (Realtime)
+- [O] Receive Message (Realtime)
