@@ -53,6 +53,8 @@ git push #3.22 seedFeed
 
 git push #3.23 sendMessage part One
 
+git push #3.24 sendMessage part Two am 11:10
+
 ## User Stories
 
 - [O] Create account
@@ -72,7 +74,7 @@ git push #3.23 sendMessage part One
 - [O] Upload a photo
 - [O] Edit the photo (Delete)
 - [O] See the feed
-- [ ] Send private Message
+- [] Send private Message
 - [O] See room
 - [] See room
 - [] Receive Message (Realtime)
