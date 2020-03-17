@@ -55,6 +55,8 @@ git push #3.23 sendMessage part One
 
 git push #3.24 sendMessage part Two am 11:10
 
+git push #3.25
+
 ## User Stories
 
 - [O] Create account
@@ -74,7 +76,7 @@ git push #3.24 sendMessage part Two am 11:10
 - [O] Upload a photo
 - [O] Edit the photo (Delete)
 - [O] See the feed
-- [] Send private Message
+- [O] Send private Message
 - [O] See room
-- [] See room
+- [O] See rooms
 - [] Receive Message (Realtime)
