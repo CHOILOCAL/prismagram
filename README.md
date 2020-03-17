@@ -51,6 +51,8 @@ git push #3.21 deletePost Resolver part Two
 
 git push #3.22 seedFeed 
 
+git push #3.23 sendMessage part One
+
 ## User Stories
 
 - [O] Create account
@@ -70,7 +72,7 @@ git push #3.22 seedFeed
 - [O] Upload a photo
 - [O] Edit the photo (Delete)
 - [O] See the feed
-- [] See rooms
+- [ ] Send private Message
+- [O] See room
 - [] See room
-- [] Send private Message
 - [] Receive Message (Realtime)
