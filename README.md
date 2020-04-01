@@ -59,6 +59,8 @@ git push #3.27 newMessage Subscription part One
 
 git push #3.30 complete
 
+git connection test 04-01 hyunchoi
+
 ## User Stories
 
 - [O] Create account
