@@ -61,6 +61,8 @@ git push #3.30 complete
 
 git connection test 04-01 hyunchoi
 
+git connection test 04-01 hyunchoi 02
+
 ## User Stories
 
 - [O] Create account
