@@ -10,7 +10,7 @@
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.0-beta.6",
+    "babel-loader": "^8.3.0",
     "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3",
     "morgan": "^1.9.1"
